@@ -1,0 +1,94 @@
+:root {
+    /* Backgrounds */
+    --color-background: #eee7ff;
+    --color-surface: #ffffff;
+    --color-inner-dark: #1b003a49;
+    --color-dark: #1b003a;
+
+    /* Brand colors */
+    --color-primary: #1e3066;
+    --color-accent: #51dcf5;
+
+    /* Text */
+    --color-text: #1e3066;
+    --color-text-muted: #666666;
+    --color-text-light: #ffffff;
+}
+
+
+body{
+    margin: 0;
+    background-color: var(--color-background);
+    font-family: Helvetica;
+    min-width: 370px;
+}
+
+header{
+    padding-left: 2%;
+    padding-right: 1%;
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    
+
+    border-bottom: 3px solid var(--color-dark); */
+    
+
+}
+h1{
+    color: var(--color-text);
+    horizontal-align: middle;
+}
+
+.header-actions {
+    display: flex;
+    gap: 30px;
+    
+}
+
+nav{
+    display: flex;
+}
+
+.dyd{
+    padding: 8px;
+    margin: 3px;
+    color: var(--color-text);
+    font-size: small;
+    background-color: #1b003a00;
+    text-decoration: none;
+}
+
+.dyd:hover{
+    border-bottom: var(--color-dark);
+}
+
+footer{
+    margin: 20px;
+    color: var(--color-dark);
+}
+
+.cart {
+    padding: 8px;
+    margin: 3px;
+    color: var(--color-text);
+    font-size: small;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+/* Adjust the header when the screen is narrow */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
